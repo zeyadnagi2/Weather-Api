@@ -3,30 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>test</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Weather Api</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=Pacifico&family=Righteous&family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
+      rel="shortcut icon"
+      href="./images/logo (1).png"
+      type="image/x-icon"
     />
-
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
-<body class="d-flex justify-content-center align-items-center vh-100">
 
-  <div class="d-flex flex-column align-items-center gap-3">
-    <div class="container w-75 bg-black p-3 text-white d-flex justify-content-center align-items-center" >
-    </div>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-transparent mt-4 navbar-dark d-flex">
+      <div class="container w-75">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <img
+            src="./images/nav-icon.png"
+            alt="Bootstrap"
+            width="40"
+            height="40"
+            class="rounded mx-1"
+          />
+          <div class="d-flex flex-column justify-content-center">
+            <h3 class="fs-6 mb-0 text-white">Weather</h3>
+            <p class="lead fs-6 mb-0 text-white-50">tagline goes here</p>
+          </div>
+        </a>
 
-    <button class="btn btn-danger">Add</button>
-  </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-3">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#">Live Cameras</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#">Photos</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
