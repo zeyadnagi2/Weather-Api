@@ -1,8 +1,157 @@
-img{
-    width: 100%;
-    display: block;
+/* ================================
+   Global Resets & Base Styling
+================================== */
+
+img {
+  width: 100%;
+  display: block;
 }
 
-body{
-    background-color: #1E202B;
+body {
+  background-color: #1e202b;
+  color: #ccc;
+  font-family: Arial, sans-serif;
+}
+
+/* ================================
+   Navbar Styling
+================================== */
+
+.nav-link {
+  color: white !important;
+  padding: 8px 16px;
+  border-radius: 30px;
+  border: 2px solid transparent;
+  transition: all 0.5s ease;
+}
+
+.nav-link:hover,
+.nav-link.active,
+.nav-link.custom-active {
+  color: #00aaff !important;
+  border-color: #00aaff;
+}
+
+/* ================================
+   Hero Section
+================================== */
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-image: url("../images/background.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+/* ================================
+   Search Box
+================================== */
+
+.search-box {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.custom-search {
+  background-color: #1e202b;
+  border-radius: 50px;
+  padding: 5px;
+  display: flex;
+  width: 75%;
+  overflow: hidden;
+}
+
+.search-input {
+  background-color: #1e202b;
+  border: none;
+  color: #ccc;
+  padding: 15px 20px;
+  border-radius: 50px 0 0 50px;
+  font-size: 16px;
+  flex: 1;
+}
+
+.search-input::placeholder {
+  color: #999;
+}
+
+.search-input:focus {
+  background-color: #1e202b;
+  color: #ccc;
+  box-shadow: none;
+  outline: none;
+}
+
+.search-btn {
+  background-color: #009ad8;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #007bbd;
+}
+
+/* ================================
+   Forecast Cards Section
+================================== */
+
+.forecast-section {
+  background-color: #1e202b;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.weather-card {
+  background-color: #2e2f3b;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  color: #ccc;
+  text-align: center;
+}
+
+.weather-card:hover {
+  transform: translateY(-6px);
+  background-color: #353645;
+}
+
+.weather-icon {
+  width: 50px;
+  filter: drop-shadow(0 0 5px #00aaff);
+  margin: 10px auto;
+}
+
+/* Force gray on all text elements in the cards */
+.weather-card h2,
+.weather-card h5,
+.weather-card p {
+  color: #ccc !important;
+}
+
+.weather-card .text-muted,
+.weather-card .text-white-50,
+.weather-card .text-info {
+  color: #aaa !important;
 }
