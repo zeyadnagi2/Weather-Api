@@ -4,11 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Api</title>
-    <link
-      rel="shortcut icon"
-      href="./images/logo (1).png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="./images/logo (1).png" type="image/x-icon" />
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/index.css" />
@@ -18,13 +14,7 @@
     <nav class="navbar navbar-expand-lg bg-transparent my-4 d-flex text-center">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-          <img
-            src="./images/nav-icon.png"
-            alt="Bootstrap"
-            width="40"
-            height="40"
-            class="rounded mx-1"
-          />
+          <img src="./images/nav-icon.png" alt="Bootstrap" width="40" height="40" class="rounded mx-1" />
           <div class="d-flex flex-column justify-content-center">
             <h3 class="fs-6 mb-0 text-white">Weather</h3>
             <p class="lead fs-6 mb-0 text-white-50">tagline goes here</p>
@@ -38,20 +28,14 @@
           data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-lg-0">
             <li class="nav-item mx-3">
-              <a
-                class="nav-link active custom-active mx-1"
-                aria-current="page"
-                href="#"
-                >Home</a
-              >
+              <a class="nav-link active custom-active mx-1" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item mx-1">
               <a class="nav-link mx-1" href="#">News</a>
@@ -72,15 +56,9 @@
 
     <div class="hero-section">
       <div class="overlay"></div>
-      <div
-        class="search-box container d-flex align-items-center justify-content-center h-100"
-      >
+      <div class="search-box container d-flex align-items-center justify-content-center h-100">
         <div class="input-group custom-search w-75">
-          <input
-            type="text"
-            class="form-control search-input"
-            placeholder="Find your location..."
-          />
+          <input type="text" class="form-control search-input" placeholder="Find your location..." />
           <button class="btn search-btn" type="button">Find</button>
         </div>
       </div>
@@ -90,61 +68,44 @@
     <section class="forecast-section py-5">
       <div class="container">
         <div class="row g-4 justify-content-center">
-          <!-- Friday Card -->
+          <!-- TODAY -->
           <div class="col-md-4">
-            <div
-              class="weather-card p-4 rounded-4 text-white text-center h-100"
-            >
-              <h5 class="text-muted">Friday</h5>
-              <p class="text-muted">4 July</p>
-              <h2 class="fw-bold display-4">28.1ºC</h2>
-              <img
-                src="./images/moon.png"
-                alt="Clear Night"
-                class="my-2 weather-icon"
-              />
-              <p class="text-info">Clear</p>
+            <div class="weather-card p-4 rounded-4 text-white text-center h-100">
+              <h4 class="city-name text-white mb-2">Cairo</h4>
+              <h5 class="text-muted today-name">Friday</h5>
+              <p class="text-muted today-date">4 July</p>
+              <h2 class="fw-bold display-4 temperature">28.1ºC</h2>
+              <img src="./images/moon.png" alt="Clear Night" class="my-2 weather-icon temperature-icon" />
+              <p class="text-info temp-description">Clear</p>
               <div class="d-flex justify-content-around text-white-50 mt-3">
-                <span><i class="fas fa-umbrella"></i> 20%</span>
-                <span><i class="fas fa-wind"></i> 18km/h</span>
-                <span><i class="fas fa-location-arrow"></i> East</span>
+                <span class="humidity"><i class="fas fa-umbrella"></i> 20%</span>
+                <span class="air"><i class="fas fa-wind"></i> 18km/h</span>
+                <span class="navegation"><i class="fas fa-location-arrow"></i> East</span>
               </div>
             </div>
           </div>
 
-          <!-- Saturday Card -->
+          <!-- NEXT DAY 1 -->
           <div class="col-md-4">
-            <div
-              class="weather-card p-4 rounded-4 text-white text-center h-100"
-            >
-              <h5 class="text-muted">Saturday</h5>
-              <p class="text-muted">5 July</p>
-              <h2 class="fw-bold display-4">40ºC</h2>
-              <img
-                src="./images/sun.png"
-                alt="Sunny"
-                class="my-2 weather-icon"
-              />
-              <p class="text-info">Sunny</p>
-              <p class="text-white-50">25.2º</p>
+            <div class="weather-card p-4 rounded-4 text-white text-center h-100">
+              <h5 class="text-muted day-name">Saturday</h5>
+              <p class="text-muted day-date">5 July</p>
+              <h2 class="fw-bold display-4 day-temp">40ºC</h2>
+              <img src="./images/sun.png" alt="Sunny" class="my-2 weather-icon day-icon" />
+              <p class="text-info description">Sunny</p>
+              <p class="text-white-50 min-temp">25.2º</p>
             </div>
           </div>
 
-          <!-- Sunday Card -->
+          <!-- NEXT DAY 2 -->
           <div class="col-md-4">
-            <div
-              class="weather-card p-4 rounded-4 text-white text-center h-100"
-            >
-              <h5 class="text-muted">Sunday</h5>
-              <p class="text-muted">6 July</p>
-              <h2 class="fw-bold display-4">40.3ºC</h2>
-              <img
-                src="./images/sun.png"
-                alt="Sunny"
-                class="my-2 weather-icon"
-              />
-              <p class="text-info">Sunny</p>
-              <p class="text-white-50">25.1º</p>
+            <div class="weather-card p-4 rounded-4 text-white text-center h-100">
+              <h5 class="text-muted day-name">Sunday</h5>
+              <p class="text-muted day-date">6 July</p>
+              <h2 class="fw-bold display-4 day-temp">40.3ºC</h2>
+              <img src="./images/sun.png" alt="Sunny" class="my-2 weather-icon day-icon" />
+              <p class="text-info description">Sunny</p>
+              <p class="text-white-50 min-temp">25.1º</p>
             </div>
           </div>
         </div>
